@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+#root,html,body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+.ad{
+    background-color: whitesmoke;
+    width: 40%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 5px 5px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn{
+    padding: 8px 35px;
+    border-radius: 10px;
+    background-color: rgb(33, 142, 142);
+    color: black;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(225, 225, 225);
+    background-color: rgb(146, 172, 172);
+    transition: ease-out 0.2s;
+    transform: rotate(1deg);
+    color: rgb(47, 30, 8);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quote{
+    font-family: 'League Spartan', sans-serif;;
 }
